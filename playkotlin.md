@@ -38,6 +38,14 @@ fun main() {
     println ("mySet ${mySet}")
     
     
+    val secretMap = mapOf("Up" to 1, "Down" to 2, "Left" to 3, "Right" to 4)
+    val myMutableSecretMap = mutableMapOf("One" to 1, "Two" to 2, "Three" to 3)
+	myMutableSecretMap["Fourt"]=4	
+    
+    if("Up" in secretMap) println ("Yes is in!")
+    if(4 in secretMap.values) println ("Yes is in!")
+    
+    
     
     myListOfNames.forEach{
         print(" Mahidol: $it | ")
